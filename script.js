@@ -1,8 +1,10 @@
 function calcularIMC() {
+    var idade = parseInt(document.getElementById("idade").value);
+    var sexo = document.getElementById("sexo").value;
     var peso = parseFloat(document.getElementById("peso").value);
     var altura = parseFloat(document.getElementById("altura").value);
 
-    if (!isNaN(peso) && !isNaN(altura) && altura > 0) {
+    if (!isNaN(idade) && idade >= 10 && !isNaN(peso) && !isNaN(altura) && altura > 0) {
         var imc = peso / (altura * altura);
         document.getElementById("resultado").textContent = imc.toFixed(2);
 

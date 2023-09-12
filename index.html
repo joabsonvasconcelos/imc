@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
-    <p>Preencha os campos abaixo:</p>
+    <section class="container">
+        <p class="title">Calculadora de IMC</p>
+        <p class="caption">Preencha os campos abaixo:</p>
 
-    <label for="peso">Peso (kg):</label>
-    <input type="number" id="peso" step="0.01"><br>
+        <label for="idade">Idade:</label>
+            <input type="number" id="idade" step="1" min="10" max="120"><br>
 
-    <label for="altura">Altura (m):</label>
-    <input type="number" id="altura" step="0.01"><br>
+        <label for="sexo">Sexo:</label>
+            <select id="sexo">
+                <option radio="masculino">Masculino</option>
+                <option radio="feminino">Feminino</option>
+            </select><br>
 
-    <button onclick="calcularIMC()">Calcular IMC</button><br>
+        <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" step="0.01"><br>
 
-    <p>Seu IMC é: <span id="resultado"></span></p>
-    <p>Classificação: <span id="classificacao"></span></p>
+        <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" step="0.01"><br>
 
-    <script src="./script.js"></script>
+        <button onclick="calcularIMC()">Calcular IMC</button><br>
 
+        <p>Seu IMC é: <span id="resultado"></span></p>
+        <p>Classificação: <span id="classificacao"></span></p>
+    </section>
+
+    <script src="./script.js"> </script>  
 </body>
 </html>
