@@ -8,15 +8,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
+    
+    
   }
   
   .container {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    padding: 50px;
+    text-align: left;
+
   }
   
   .title {
@@ -48,10 +51,12 @@ body {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 50px;
     font-size: 16px;
     cursor: pointer;
+    display: flex;
+
   }
   
   button:hover {
