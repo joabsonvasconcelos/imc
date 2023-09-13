@@ -1,6 +1,6 @@
 function calcularIMC() {
+    var nome = document.getElementById("nome").value;
     var idade = parseInt(document.getElementById("idade").value);
-    var sexo = document.getElementById("sexo").value;
     var peso = parseFloat(document.getElementById("peso").value);
     var altura = parseFloat(document.getElementById("altura").value);
 
@@ -25,8 +25,12 @@ function calcularIMC() {
         }
 
         document.getElementById("classificacao").textContent = classificacao;
+
+        // Exibe o nome
+        document.getElementById("nome_resultado").textContent = "Olá " + nome + ;
     } else {
         document.getElementById("resultado").textContent = "Por favor, insira valores válidos.";
         document.getElementById("classificacao").textContent = "";
+        document.getElementById("nome_resultado").textContent = ""; // Limpa o nome se os valores não forem válidos.
     }
 }
